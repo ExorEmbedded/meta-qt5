@@ -49,6 +49,7 @@ export QT_CONF_PATH = "${WORKDIR}/qt.conf"
 
 inherit qmake5_paths
 
+
 do_generate_qt_config_file() {
     cat > ${QT_CONF_PATH} <<EOF
 [Paths]
