@@ -47,7 +47,7 @@ OE_QMAKE_WAYLAND_SCANNER = "${STAGING_BINDIR_NATIVE}/wayland-scanner"
 # this one needs to be exported, because qmake reads it from shell env
 export QT_CONF_PATH = "${WORKDIR}/qt.conf"
 
-inherit qmake5_paths remove-libtool
+inherit qmake5_paths
 
 do_generate_qt_config_file() {
     cat > ${QT_CONF_PATH} <<EOF
